@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="image/styles/styles.css" />
+    <title>E-Sports Survey Form</title>
+  </header>
+  <body>
+    <h1 id="title">E-Sports Survey Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us have idea for the upcoming E-Sports</p>
+    <form id="survey-form" action='https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a'>
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="99" placeholder="Age" /  ></label>
+        <label>What is your favorite online game?
+          <select id="dropdown">
+            <option value="">Select your favorite online game</option>
+            <option value="1">Mobile Legends</option>
+            <option value="2">League of Legends</option>
+            <option value="3">Valorant</option>
+            <option value="4">Farlight</option>
+            <option value="5">All of the above</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Would you recommend the online game you picked to a friend?</label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked />Yes</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" />No</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" />Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label> What is your favorite mode of these online games?
+          <select id="dropdown2">
+            <option value="">Select an option</option>
+            <option value="1">Rank</option>
+            <option value="2">Classic</option>
+            <option value="3">Practice</option>
+            <option value="4">Versus AI</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to the prize for the participants for the upcoming E-Sports event? <small>(Check all that apply)</small> </label>
+        <label><input type="checkbox" class="inline" value="cash" />Cash</label>
+        <label><input type="checkbox" class="inline" value="mobile phone" />Mobile Phone</label>
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions?
+          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
